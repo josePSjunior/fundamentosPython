@@ -1,9 +1,30 @@
 ## Faz um programa que escreva o nome do mês que é introduzido, pelo utilizador, na forma numérica.
 
-meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
-
-num_mes = int(input("Introduza o número do mês (1-12): "))
-if 1 <= num_mes <= 12:
-    print(" O mês é: ", meses[num_mes - 1])
-else:
-    print("Mês inválido. Por favor, insira um número entre 1 e 12.")
+MES = int(input("Introduza o número do mês: "))
+match MES:
+    case 1:
+        print("Janeiro")
+    case 2:
+        print("Fevereiro")
+    case 3:
+        print("Março")
+    case 4:
+        print("Abril")
+    case 5:
+        print("Maio")
+    case 6:
+        print("Junho")
+    case 7:
+        print("Julho")
+    case 8:
+        print("Agosto")
+    case 9:
+        print("Setembro")
+    case 10:
+        print("Outubro")
+    case 11:
+        print("Novembro")
+    case 12:
+        print("Dezembro")
+    case _:
+        print("Mês inválido")
